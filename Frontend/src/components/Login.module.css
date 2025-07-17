@@ -1,0 +1,56 @@
+.login {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.login h1{
+    font-size: 2.1rem;
+}
+
+.login p{
+    font-size: 1rem;
+    color: rgb(218, 213, 213);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login p:hover{
+    color: white;
+}
+.loginBody{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.loginBody h3{
+    color: rgb(218, 213, 213);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.form button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 6px 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.form button:hover{
+    border: 1px solid rgb(220, 216, 216);
+    color:  rgb(220, 216, 216);
+
+}
