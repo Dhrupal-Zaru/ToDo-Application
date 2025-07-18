@@ -7,12 +7,12 @@ export default defineConfig({
   server: {
     proxy: {
       '/users': {
-        target: 'http://localhost:5000',
+        target: 'https://todo-app-fzy3.onrender.com',
         changeOrigin: true,
         secure: false,
       },
       '/tasks': {
-        target: 'http://localhost:5000',
+        target: 'https://todo-app-fzy3.onrender.com',
         changeOrigin: true,
         secure: false,
       },
