@@ -8,7 +8,7 @@ export default function AuthProvider({ children }) {
 
     useEffect(() => {
         const token = localStorage.getItem('token');
-        if(token) setIsAuthenticated(true);
+        if(token && token !== 'undefined' && token !== 'null') setIsAuthenticated(true);
         else setIsAuthenticated(false);
         setIsLoading(false)
     }, []);
