@@ -8,7 +8,7 @@ const taskRoute = require('./routes/taskRoute');
 dotenv.config();
 const app = express();
 app.use(cors({
-    origin: 'https://todo-app-9tjy.onrender.com',
+    origin: 'https://todo-app-8bve.onrender.com',
     credentials: true
 }));
 app.use(express.json())
