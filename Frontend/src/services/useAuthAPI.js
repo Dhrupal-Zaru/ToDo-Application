@@ -1,9 +1,11 @@
 import axios from "axios"
 import getAuthHeaders from "./getAuthHeaders";
 
+const BASE_URL = 'https://todo-app-fzy3.onrender.com';
+
 export async function signUp(data){
     try {
-        await axios.post('/users/signup', data);
+        await axios.post(`${BASE_URL}/users/signup`, data);
 
     } catch (err) {
         alert(err.response.data.message ||'Error while register user!');
@@ -12,7 +14,7 @@ export async function signUp(data){
 }
 export async function login(data){
     try {
-        const res = await axios.post('/users/login', data);
+        const res = await axios.post(`${BASE_URL}/users/login`, data);
         localStorage.setItem('token', res.data.token);
         return res.data;
 
@@ -23,7 +25,7 @@ export async function login(data){
 }
 export async function getUser(){
     try{
-        const res = await axios.get('/users/user', getAuthHeaders());
+        const res = await axios.get(`${BASE_URL}/users/user`, getAuthHeaders());
         console.log("data user", res.data)
         return res.data;
     }catch (err) {
