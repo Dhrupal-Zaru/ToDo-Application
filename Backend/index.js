@@ -8,7 +8,7 @@ const taskRoute = require('./routes/taskRoute');
 dotenv.config();
 const app = express();
 app.use(cors({
-    origin: 'to-do-application-three-snowy.vercel.app',
+    origin: 'https://to-do-application-three-snowy.vercel.app',
     credentials: true
 }));
 app.use(express.json())
