@@ -1,7 +1,7 @@
 import axios from "axios"
 import getAuthHeaders from "./getAuthHeaders";
 
-const BASE_URL = 'https://todo-app-fzy3.onrender.com';
+const BASE_URL = 'https://todo-app-backend-5u7a.onrender.com';
 
 export async function signUp(data){
     try {
